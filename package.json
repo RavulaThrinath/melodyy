@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "animate.css": "^4.1.1",
-    "three": "^0.140.0",
-    "typed.js": "^2.0.12"
-  }
-}
