@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+@import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Explora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "instagram";
+  src: url("./Fonts//instagram.woff") format("woff");
+}
+
+body {
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.soon-container {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.281);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.soon-title {
+  width: 100%;
+  height: auto;
+  position: relative;
+  color: #ffffff;
+  font-size: 75px;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: #6b7da8 1px 1px 10px;
+}
+.soon-des {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+}
+/* .soon-des span {
+  font-family: "instagram", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+} */

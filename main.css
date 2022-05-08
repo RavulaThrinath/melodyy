@@ -105,6 +105,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 25px;
+  pointer-events: fill;
 }
 /* Container Tooltip */
 .tooltip {
@@ -352,5 +353,63 @@ a {
     width: 25px;
     height: 25px;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .maininfo {
+    width: 100%;
+    top: 15%;
+  }
+  .maintitle {
+    font-size: 30px;
+  }
+  .subtitle {
+    left: 22%;
+    font-size: 7px;
+  }
+  .round-container {
+    width: 100%;
+    max-width: 95%;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    pointer-events: fill;
+  }
+  .tooltip {
+    width: 150px;
+    min-width: 150px;
+    height: auto;
+    padding: 3px;
+  }
+  .tooltipText {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .tooltip i {
+    margin-right: 7px;
+    font-size: 14px;
+    width: 35px;
+  }
+  .community {
+    gap: 25px;
+  }
+  .comm-1 p,
+  .comm-2 p {
+    font-size: 20px;
+  }
+  .comm-1 span,
+  .comm-2 span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  #typed {
+    font-size: 12px;
+  }
+  .footer {
+    width: 100%;
+  }
+  .wrapper .icon i {
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
   }
 }
