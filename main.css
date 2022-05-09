@@ -6,6 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
 @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Explora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -21,7 +22,7 @@
 
 @font-face {
   font-family: "Spring";
-  src: url("./fonts/BenillaCalligraphy-rgrpA.woff") format("woff");
+  src: url("./fonts/Cursive.woff") format("woff");
 }
 
 body {
@@ -60,40 +61,54 @@ body {
 .subtitle {
   width: 100%;
   position: absolute;
-  top: 80%;
-  left: 32%;
+  top: 85%;
+  left: 33%;
   transform: translate(-50%, -50%);
   color: #ececff;
-  font-weight: normal;
-  font-size: 13px;
-  font-family: "Spring", cursive;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Merienda", cursive;
   text-align: center;
   --animate-delay: 0.4s;
   letter-spacing: 1px;
 }
+.under {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff96;
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #62626420;
+  margin-top: 10px;
+  padding: 5px 0;
+}
+.under i {
+  color: orange;
+  margin-right: 5px;
+}
 
 .Accommodation {
-  --animate-duration: 700ms;
   --animate-delay: 1.2s;
 }
 .Food {
-  --animate-duration: 700ms;
   --animate-delay: 1.4s;
 }
 .Jobs {
-  --animate-duration: 700ms;
   --animate-delay: 1.6s;
 }
 .Travel {
-  --animate-duration: 700ms;
   --animate-delay: 1.8s;
 }
 .Immigration {
-  --animate-duration: 700ms;
   --animate-delay: 2s;
 }
 .Career {
-  --animate-duration: 700ms;
   --animate-delay: 2.2s;
 }
 
@@ -102,6 +117,9 @@ body {
   top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
   pointer-events: fill;
 }
 /* Container Tooltip */
@@ -114,7 +132,7 @@ body {
   border-radius: 15px;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  padding: 6px 5px;
+  padding: 7px 20px 7px 7px;
 }
 
 /* Style text tooltip */
@@ -128,7 +146,7 @@ body {
 
 /* Style Icon */
 .tooltip i {
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px;
   color: #ffffff;
   margin-right: 10px;
@@ -141,7 +159,6 @@ body {
 }
 
 .community {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,7 +291,7 @@ a {
   background: #f09433;
   background: -moz-linear-gradient(
     45deg,
-    #f09433 0%,
+    rgb(240, 148, 51) 0%,
     #e6683c 25%,
     #dc2743 50%,
     #cc2366 75%,
@@ -359,12 +376,17 @@ a {
     font-size: 32px;
   }
   .subtitle {
-    left: 22%;
-    font-size: 7px;
+    left: 27%;
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .under {
+    font-size: 9px;
   }
   .round-container {
     width: 100%;
     max-width: 100%;
+    top: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,7 +397,7 @@ a {
   .tooltip {
     width: 46%;
     height: auto;
-    padding: 5px ;
+    padding: 5px;
   }
   .tooltipText {
     font-size: 11px;
@@ -387,7 +409,12 @@ a {
     width: 35px;
   }
   .community {
-    gap: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
   .comm-1 p,
   .comm-2 p {

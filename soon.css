@@ -55,8 +55,12 @@ body {
   font-size: 20px;
   font-family: "poppins", sans-serif;
 }
-/* .soon-des span {
-  font-family: "instagram", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-} */
+.soon-des a img {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
