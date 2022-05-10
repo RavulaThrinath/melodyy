@@ -18,8 +18,6 @@
 }
 
 .soon-container {
-  width: 100%;
-  margin: auto;
   position: absolute;
   top: 45%;
   left: 50%;
@@ -28,6 +26,7 @@
   background-color: rgba(0, 0, 0, 0.281);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  padding: 20px;
 }
 
 .soon-title {
