@@ -17,20 +17,11 @@
   src: url("./Fonts//instagram.woff") format("woff");
 }
 
-body {
-  background: #000;
-  height: 100vh;
-  overflow: hidden;
-}
-
 .soon-container {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
+  width: 100%;
+  margin: auto;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -50,17 +41,60 @@ body {
   font-weight: 600;
   text-shadow: #6b7da8 1px 1px 10px;
 }
+
 .soon-des {
   color: #ffffff;
-  font-size: 20px;
   font-family: "poppins", sans-serif;
+  margin-top: 10px;
 }
-.soon-des a img {
-  width: 30%;
-  height: auto;
-  cursor: pointer;
-  pointer-events: all;
+.soon-des h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.soon-des p {
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.soon-des a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soon-des a img {
+  width: 80px;
+  height: auto;
+  pointer-events: all;
+  margin: 0 6px;
+}
+
+@media screen and (max-width: 420px) {
+  .soon-container {
+    top: 50%;
+  }
+  .soon-title {
+    font-size: 45px;
+  }
+  .soon-des h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .soon-des p {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .soon-des a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .soon-des a img {
+    width: 60px;
+    height: auto;
+    pointer-events: all;
+    margin: 0 6px;
+  }
 }
