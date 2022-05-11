@@ -33,7 +33,7 @@ body {
   background: #000;
   width: 100%;
   height: auto;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 .typed-cursor {
   display: none;
@@ -388,8 +388,8 @@ a {
 @media screen and (max-width: 420px) {
   body {
     height: 110vh;
-    overflow-x: hidden;
-    overflow-y: visible;
+    /* overflow-x: hidden;
+    overflow-y: visible; */
     background-color: #000;
   }
   .maininfo {
@@ -407,7 +407,7 @@ a {
   .round-container {
     width: 100%;
     max-width: 100%;
-    top: 55%;
+    top: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
