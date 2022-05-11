@@ -12,4 +12,4 @@ const myTimeout = setTimeout(() => {
     pos: 'top-center',
     timeout: 2000,
   });
-}, 7000);
+}, 7800);
