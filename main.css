@@ -22,14 +22,18 @@
 
 @font-face {
   font-family: "Spring";
-  src: url("./fonts/Cursive.woff") format("woff");
+  src: url("./fonts/BenillaCalligraphy-rgrpA.woff") format("woff");
+}
+
+a {
+  text-decoration: none !important;
 }
 
 body {
   background: #000;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: auto;
+  overflow-y: hidden;
 }
 .typed-cursor {
   display: none;
@@ -39,11 +43,33 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
+.uk-notification-message-warning {
+  background: #1e436e !important;
+  color: #ffffff !important;
+  padding: 10px !important;
+  font-size: 17px !important;
+  border-radius: 3px !important;
+}
+.uk-notification-message-warning > div {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+.uk-icon {
+  margin: 0 7px !important;
+}
+.uk-notification {
+  width: 25% !important;
+}
+.uk-notification-close {
+  top: 15px !important;
+}
+
 .maininfo {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -62,36 +88,16 @@ body {
 .subtitle {
   width: 100%;
   position: absolute;
-  top: 85%;
-  left: 33%;
+  top: 99%;
+  left: 30%;
   transform: translate(-50%, -50%);
   color: #ececff;
   font-weight: 500;
-  font-size: 20px;
-  font-family: "Merienda", cursive;
+  font-size: 15px;
+  font-family: "Spring", cursive;
   text-align: center;
   --animate-delay: 0.4s;
   letter-spacing: 1px;
-}
-.under {
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff96;
-  font-family: "Inter", sans-serif;
-  text-transform: capitalize;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  background-color: #62626420;
-  margin-top: 10px;
-  padding: 5px 0;
-}
-.under i {
-  color: orange;
-  margin-right: 5px;
 }
 
 .Accommodation {
@@ -112,19 +118,29 @@ body {
 .Career {
   --animate-delay: 2.2s;
 }
+.Movies {
+  --animate-delay: 2.4s;
+}
+.Visa {
+  --animate-delay: 2.6s;
+}
 
 .round-container {
+  width: 80%;
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 25px;
   pointer-events: fill;
 }
 /* Container Tooltip */
 .tooltip {
+  width: 230px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -177,6 +193,7 @@ body {
   font-weight: normal;
   color: white;
   text-shadow: #6b7da8 1px 1px 10px;
+  margin-bottom: 0 !important;
 
   /* -webkit-text-fill-color: black; 
   -webkit-text-stroke-width: 1px;
@@ -201,11 +218,11 @@ body {
 }
 
 .comm-1 {
-  --animate-delay: 2.9s;
+  --animate-delay: 3.1s;
   --animate-duration: 0.6s;
 }
 .comm-2 {
-  --animate-delay: 3.2s;
+  --animate-delay: 3.4s;
   --animate-duration: 0.6s;
 }
 /* Footer bar starts */
@@ -261,16 +278,16 @@ a {
   --animate-duration: 300ms;
 }
 .facebook {
-  --animate-delay: 5.2s;
+  --animate-delay: 6s;
 }
 .twitter {
-  --animate-delay: 5.4s;
+  --animate-delay: 6.2s;
 }
 .instagram {
-  --animate-delay: 5.6s;
+  --animate-delay: 6.4s;
 }
 .youtube {
-  --animate-delay: 5.8s;
+  --animate-delay: 6.6s;
 }
 
 .wrapper .icon:hover span {
@@ -369,6 +386,12 @@ a {
   }
 }
 @media screen and (max-width: 420px) {
+  body {
+    height: 110vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    background-color: #000;
+  }
   .maininfo {
     width: 100%;
     top: 15%;
@@ -377,17 +400,14 @@ a {
     font-size: 32px;
   }
   .subtitle {
-    left: 27%;
-    font-size: 14px;
+    left: 24%;
+    font-size: 10px;
     letter-spacing: 0;
-  }
-  .under {
-    font-size: 9px;
   }
   .round-container {
     width: 100%;
     max-width: 100%;
-    top: 45%;
+    top: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -410,10 +430,10 @@ a {
     width: 35px;
   }
   .community {
+    top: 90%;
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
     gap: 10px;
   }
@@ -430,11 +450,24 @@ a {
     font-size: 12px;
   }
   .footer {
+    top: 105%;
     width: 100%;
   }
   .wrapper .icon i {
     width: 12px;
     height: 12px;
     font-size: 10px;
+  }
+  .uk-notification {
+    width: 60% !important;
+    margin: auto !important;
+  }
+  .uk-notification-message-warning {
+    padding: 5px !important;
+    font-size: 12px !important;
+  }
+  .uk-icon {
+    margin: 0 7px !important;
+    width: 15px !important;
   }
 }

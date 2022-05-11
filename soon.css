@@ -16,6 +16,9 @@
   font-family: "instagram";
   src: url("./Fonts//instagram.woff") format("woff");
 }
+body {
+  background-color: #000000;
+}
 
 .soon-container {
   position: absolute;
